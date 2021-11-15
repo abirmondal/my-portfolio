@@ -1,0 +1,63 @@
+.mainIntro {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../img/bimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.imgBox {
+    width: 50vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myImg {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* PROGRESS BAR */
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 12rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
