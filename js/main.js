@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".introInfo").animate({
         opacity: "1",
-        bottom: "80px"
+        bottom: "90px"
     }, 1000);
 });
