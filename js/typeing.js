@@ -6,7 +6,6 @@ var flowText = '';
 var pauseN = 15;
 var pausei = pauseN;
 var eachInterval = timeInterval / (textLen + pauseN);
-console.log(eachInterval * pauseN);
 function typingFun() {
     if (isDelete == 0) {
         flowText += contents[i][j++];
