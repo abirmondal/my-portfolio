@@ -1,7 +1,7 @@
 .mainIntro {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('../img/bimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,9 +12,7 @@
 
 .imgBox {
 	width: 100%;
-    position: absolute;
-    top: 15vh;
-    z-index: 20;
+    padding-top: max(15vh, 70px);
 }
 
 .myImg {
@@ -27,11 +25,9 @@
 
 .introInfo {
     opacity: 0;
-    position: absolute;
-    bottom: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    margin: 0 auto;
+    max-width: 300px;
+    padding-top: 10px;
 }
 
 .introText {
