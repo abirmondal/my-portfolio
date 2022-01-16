@@ -1,7 +1,7 @@
 main {
     overflow: auto;
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 main > div {
     scroll-snap-align: start;
