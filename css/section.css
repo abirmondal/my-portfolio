@@ -1,5 +1,15 @@
+main {
+    overflow: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+main > div {
+    scroll-snap-align: start;
+}
+
 .sec {
-    margin: 10%;
+    margin: 0 10%;
+    padding-top: 50px;
     min-height: 100vh;
 }
 .sec .secHead {
