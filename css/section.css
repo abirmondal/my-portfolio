@@ -1,0 +1,27 @@
+.sec {
+    margin: 10%;
+    min-height: 100vh;
+}
+.sec .secHead {
+    text-align: center;
+    color: #00ab44;
+}
+.secHead i {
+    font-size: 40px;
+}
+.secHead h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.secBlock {
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 25px;
+}
+.secBlock i, .secBlock small {
+    color: #666666;
+}
+.secBlock small {
+    text-transform: uppercase;
+}
