@@ -1,11 +1,14 @@
-main {
+/*
+ FOR BLOCK SCROLL EFFECT 
+ */
+/* main {
     overflow: auto;
     height: 100vh;
     scroll-snap-type: y proximity;
 }
 main > div {
     scroll-snap-align: start;
-}
+} */
 
 .sec {
     margin: 0 10%;
