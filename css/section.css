@@ -38,3 +38,12 @@ main > div {
 .secBlock small {
     text-transform: uppercase;
 }
+.secDet {
+    display: flex;
+    align-items: flex-start;
+}
+.secImg {
+    height: 60px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
