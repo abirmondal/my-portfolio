@@ -1,0 +1,57 @@
+.skillBlock {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.skillWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.skillPer {
+    width: 150px;
+    justify-content: center;
+}
+
+.skillCircle {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.skillCircleBg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.skillCircle.green .circle {
+    stroke: rgba(0, 171, 68, 0.7);
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+.sideText {
+    width: 140px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 1.5em;
+}
